@@ -5,10 +5,6 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// ---- CHANGE THIS TOKEN BEFORE DEPLOYING ---- //
-const ACCESS_TOKEN = process.env.ACCESS_TOKEN || "5thr54hdre4453w5hy";
-
-
 // ---- ANTI-BOT & SECURE HEADERS MIDDLEWARE ---- //
 app.use((req, res, next) => {
   const ua = req.headers['user-agent']?.toLowerCase() || "";
@@ -29,5 +25,6 @@ app.use(express.static(path.join(__dirname, "public")));
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
 
 
